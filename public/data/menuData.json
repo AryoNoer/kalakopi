@@ -1,0 +1,93 @@
+
+[
+  { "id": 1,
+      "name": "Dish 1",
+      "price": 10,
+      "image": "/menu (1).jpeg"
+    },
+  { "id": 2,
+      "name": "Dish 2", 
+      "price": 10, 
+      "image": "/menu (2).jpeg" 
+    },
+  { 
+      "id": 3, 
+      "name": "Dish 3", 
+      "price": 10, 
+      "image": "/menu (3).jpeg"
+    },
+  { 
+    "id": 4, 
+    "name": "Dish 4", 
+    "price": 10,
+    "image": "/menu (4).jpeg" 
+    },
+  { 
+    "id": 5, 
+    "name": "Dish 5", 
+    "price": 10, 
+    "image": "/menu (5).jpeg" 
+  },
+    { 
+    "id": 6, 
+    "name": "Dish 6", 
+    "price": 10, 
+    "image": "/menu (6).jpeg" 
+  },
+    { 
+    "id": 7, 
+    "name": "Dish 7", 
+    "price": 10, 
+    "image": "/menu (7).jpeg" 
+  },
+    { 
+    "id": 8, 
+    "name": "Dish 8", 
+    "price": 10, 
+    "image": "/menu (8).jpeg" 
+  },
+    { 
+    "id": 9, 
+    "name": "Dish 9", 
+    "price": 10, 
+    "image": "/menu (9).jpeg" 
+  },
+    { 
+    "id": 10, 
+    "name": "Dish 10", 
+    "price": 10, 
+    "image": "/menu (10).jpeg" 
+  },
+    { 
+    "id": 11, 
+    "name": "Dish 12", 
+    "price": 10, 
+    "image": "/menu (11).jpeg" 
+  },
+    { 
+    "id": 12, 
+    "name": "Dish 13", 
+    "price": 10, 
+    "image": "/menu (12).jpeg" 
+  },
+    { 
+    "id": 13, 
+    "name": "Dish 14", 
+    "price": 10, 
+    "image": "/menu (13).jpeg" 
+  },
+    { 
+    "id": 14, 
+    "name": "Dish 15", 
+    "price": 10, 
+    "image": "/menu (14).jpeg" 
+  },
+    { 
+    "id": 15, 
+    "name": "Dish 15", 
+    "price": 10, 
+    "image": "/menu (15).jpeg" 
+  }
+
+]
+  
