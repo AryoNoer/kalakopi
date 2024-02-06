@@ -1,4 +1,3 @@
-// pages/index.tsx
 import React, { useState, useEffect } from "react";
 import MenuItem from "../components/MenuItem";
 import Link from "next/link";
@@ -43,10 +42,7 @@ const Home: React.FC = () => {
     addToCart({ id, name, price, quantity: 1, image });
     setShowSuccessMessage(true);
 
-    // Hide the success message after 3 seconds
     setTimeout(() => setShowSuccessMessage(false), 3000);
-
-    // Log success message to console
     console.log(`Item '${name}' successfully added to the cart.`);
   };
 
@@ -55,13 +51,12 @@ const Home: React.FC = () => {
       <HeroSection
         title="Selamat Datang Di Kala Kopi"
         description="Selamat menikmati aroma dan cita rasa penuh karakter hanya di Kalakopi!"
-        imageUrl="/coffeeH.jpg" // Ganti dengan path gambar yang sesuai
+        imageUrl="/coffeeH.jpg"
       />
       <h1 className="text-2xl md:text-4xl font-semibold my-20 px-4 md:my-32 text-center">
         Bagaimana Harimu? Yuk Pesan Kopi Sekarang!
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-[#DFD7BF] py-20 px-4 md:px-8">
-        {/* Render menu items */}
         {menuItems.map((item) => (
           <MenuItem
             key={item.id}

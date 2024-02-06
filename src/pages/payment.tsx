@@ -1,4 +1,3 @@
-// pages/payment.tsx
 import React, { useState } from "react";
 import Link from "next/link";
 import { useAppContext } from "../context/appContext";
@@ -19,7 +18,6 @@ const Payment: React.FC = () => {
   };
 
   const handleConfirmOrder = () => {
-    // Construct the WhatsApp message
     const message = `New order:
 Nama: ${formData.fullName}
 No.Telp: ${formData.phone}
@@ -27,12 +25,10 @@ Email: ${formData.email}
 No.Meja: ${formData.tableNumber}
 Items: ${cart.map((item) => `${item.name} (${item.quantity})`).join(", ")}`;
 
-    // Create a WhatsApp link with the message
     const whatsappLink = `https://wa.me/6285156031908?text=${encodeURIComponent(
       message
     )}`;
 
-    // Open WhatsApp in a new tab/window
     window.open(whatsappLink, "_blank");
   };
 

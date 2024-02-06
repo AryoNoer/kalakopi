@@ -1,4 +1,3 @@
-// components/CartItem.tsx
 import Image from "next/image";
 import React from "react";
 
@@ -7,7 +6,7 @@ interface CartItemProps {
   name: string;
   price: number;
   quantity: number;
-  image: string; // Tambahkan properti image
+  image: string;
 }
 
 const CartItem: React.FC<CartItemProps> = ({

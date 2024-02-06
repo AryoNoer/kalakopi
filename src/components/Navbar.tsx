@@ -1,4 +1,3 @@
-// components/Navbar.tsx
 import Link from "next/link";
 
 const Navbar: React.FC = () => {
@@ -38,7 +37,6 @@ const Navbar: React.FC = () => {
               />
             </svg>
           </Link>
-          {/* Add more links as needed */}
         </div>
       </div>
     </nav>

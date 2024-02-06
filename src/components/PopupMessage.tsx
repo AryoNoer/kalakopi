@@ -1,4 +1,3 @@
-// components/PopupMessage.tsx
 import React, { useEffect } from "react";
 
 interface PopupMessageProps {

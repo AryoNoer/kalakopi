@@ -1,4 +1,3 @@
-// pages/cart.tsx
 import React from "react";
 import Link from "next/link";
 import { useAppContext } from "../context/appContext";

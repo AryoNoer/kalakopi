@@ -1,4 +1,3 @@
-// context/appContext.tsx
 import React, {
   createContext,
   useContext,
@@ -33,7 +32,6 @@ export const AppContextProvider: React.FC<AppContextProviderProps> = ({
 }) => {
   const [cart, setCart] = useState<CartItem[]>([]);
 
-  // Load cart from local storage on component mount
   useEffect(() => {
     const storedCart = localStorage.getItem("cart");
     if (storedCart) {
@@ -41,7 +39,6 @@ export const AppContextProvider: React.FC<AppContextProviderProps> = ({
     }
   }, []);
 
-  // Save cart to local storage whenever it changes
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
@@ -53,12 +50,10 @@ export const AppContextProvider: React.FC<AppContextProviderProps> = ({
       );
 
       if (existingItemIndex !== -1) {
-        // If item already exists in the cart, update quantity
         const updatedCart = [...prevCart];
         updatedCart[existingItemIndex].quantity += item.quantity;
         return updatedCart;
       } else {
-        // If item is not in the cart, add it
         return [...prevCart, item];
       }
     });

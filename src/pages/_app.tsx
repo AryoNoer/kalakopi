@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <AppContextProvider>
       <Navbar />
-      <Component {...pageProps} className={poppins.className} />
+      <Component {...pageProps} className={`${poppins.className}`} />
       <Footer />
     </AppContextProvider>
   );

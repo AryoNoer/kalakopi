@@ -1,4 +1,3 @@
-// components/HeroSection.tsx
 import Image from "next/image";
 import React from "react";
 
@@ -21,7 +20,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <p className="text-lg md:text-2xl mb-8 mx-10 md:mx-20">
             {description}
           </p>
-          {/* Add any additional elements or buttons as needed */}
         </div>
         <div className="mx-auto">
           <Image
