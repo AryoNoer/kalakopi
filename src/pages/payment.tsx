@@ -21,10 +21,10 @@ const Payment: React.FC = () => {
   const handleConfirmOrder = () => {
     // Construct the WhatsApp message
     const message = `New order:
-Name: ${formData.fullName}
-Phone: ${formData.phone}
+Nama: ${formData.fullName}
+No.Telp: ${formData.phone}
 Email: ${formData.email}
-Table Number: ${formData.tableNumber}
+No.Meja: ${formData.tableNumber}
 Items: ${cart.map((item) => `${item.name} (${item.quantity})`).join(", ")}`;
 
     // Create a WhatsApp link with the message
