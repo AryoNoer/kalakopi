@@ -21,18 +21,18 @@ const MenuItem: React.FC<MenuItemProps> = ({
       <Image
         src={image}
         alt={name}
-        className="mb-2 h-32 md:h-80 w-full object-cover rounded-lg"
+        className="mb-2 h-32 md:h-60 w-full object-cover rounded-lg"
         width={300}
         height={300}
       />
-      <p className="text-lg font-semibold">{name}</p>
+      <p className="text-lg font-semibold my-2">{name}</p>
       <div className="flex items-end justify-between">
         <p className="text-gray-600 font-bold text-base md:text-2xl">
           Rp.{price.toFixed(3)},-
         </p>
         <button
           onClick={onAddToCart}
-          className="border-solid border-2 border-[#3F2305] px-4  py-2 mt-2 rounded-full hover:bg-[#DFD7BF] duration-300"
+          className=" border-solid border-2 border-[#3F2305] px-2 py-1 mt-2 rounded-full hover:bg-[#DFD7BF] duration-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

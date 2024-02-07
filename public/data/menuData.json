@@ -1,92 +1,101 @@
 
 [
   { "id": 1,
-      "name": "Dish 1",
-      "price": 10,
-      "image": "/menu (1).jpeg"
+      "name": "Pisang Goreng (Isi 5)",
+      "price": 25,
+      "image": "/Pisang Goreng (Isi 5).jpeg",
+      "category": "Makanan"
     },
   { "id": 2,
-      "name": "Dish 2", 
-      "price": 10, 
-      "image": "/menu (2).jpeg" 
+      "name": "Caramel Machiato", 
+      "price": 36, 
+      "image": "/Caramel Machiato.jpeg",
+      "category": "Minuman" 
     },
   { 
       "id": 3, 
-      "name": "Dish 3", 
-      "price": 10, 
-      "image": "/menu (3).jpeg"
+      "name": "Kopi Susu Tergoda", 
+      "price": 30, 
+      "image": "/Tergoda.jpeg",
+      "category": "Minuman"
     },
   { 
     "id": 4, 
-    "name": "Dish 4", 
-    "price": 10,
-    "image": "/menu (4).jpeg" 
+    "name": "Kopi Susu  MengGoda", 
+    "price": 30,
+    "image": "/MengGoda.jpeg",
+    "category": "Minuman" 
     },
-  { 
+    { 
     "id": 5, 
-    "name": "Dish 5", 
-    "price": 10, 
-    "image": "/menu (5).jpeg" 
+    "name": "Kopi Susu Gula Aren", 
+    "price": 25, 
+    "image": "/Kopi Susu Gula Aren.jpeg",
+    "category": "Minuman" 
   },
+    
     { 
     "id": 6, 
-    "name": "Dish 6", 
-    "price": 10, 
-    "image": "/menu (6).jpeg" 
+    "name": "Red Velvet", 
+    "price": 30, 
+    "image": "/Red Velvet.jpeg",
+    "category": "Minuman" 
   },
     { 
     "id": 7, 
-    "name": "Dish 7", 
-    "price": 10, 
-    "image": "/menu (7).jpeg" 
+    "name": "Coklat", 
+    "price": 30, 
+    "image": "/Coklat.jpeg",
+    "category": "Minuman" 
   },
     { 
     "id": 8, 
-    "name": "Dish 8", 
-    "price": 10, 
-    "image": "/menu (8).jpeg" 
+    "name": "Matcha", 
+    "price": 30, 
+    "image": "/Matcha.jpeg",
+    "category": "Minuman" 
   },
     { 
     "id": 9, 
-    "name": "Dish 9", 
-    "price": 10, 
-    "image": "/menu (9).jpeg" 
+    "name": "Risoles (Isi 3) ala KKM", 
+    "price": 25, 
+    "image": "/Risoles (Isi 3).jpeg",
+    "category": "Makanan" 
   },
     { 
     "id": 10, 
-    "name": "Dish 10", 
-    "price": 10, 
-    "image": "/menu (10).jpeg" 
+    "name": "Klepon", 
+    "price": 30, 
+    "image": "/Klepon.jpeg",
+    "category": "Minuman" 
   },
     { 
     "id": 11, 
-    "name": "Dish 12", 
-    "price": 10, 
-    "image": "/menu (11).jpeg" 
+    "name": "Bitterballen (Isi 4)", 
+    "price": 30, 
+    "image": "/Bitterballen (Isi 4).jpeg",
+    "category": "Makanan" 
   },
     { 
     "id": 12, 
-    "name": "Dish 13", 
-    "price": 10, 
-    "image": "/menu (12).jpeg" 
+    "name": "French Fries ala KKM", 
+    "price": 25, 
+    "image": "/French Fries.jpeg",
+    "category": "Makanan" 
   },
     { 
     "id": 13, 
-    "name": "Dish 14", 
-    "price": 10, 
-    "image": "/menu (13).jpeg" 
+    "name": "Lumpia (Isi 3)", 
+    "price": 25, 
+    "image": "/Lumpia (Isi 3).jpeg",
+    "category": "Makanan" 
   },
     { 
     "id": 14, 
-    "name": "Dish 15", 
-    "price": 10, 
-    "image": "/menu (14).jpeg" 
-  },
-    { 
-    "id": 15, 
-    "name": "Dish 15", 
-    "price": 10, 
-    "image": "/menu (15).jpeg" 
+    "name": "DiGodain", 
+    "price": 30, 
+    "image": "/DiGodain.jpeg",
+    "category": "Minuman"
   }
 
 ]

@@ -1,9 +1,7 @@
+// pages/index.tsx
 import React, { useState, useEffect } from "react";
 import MenuItem from "../components/MenuItem";
-import Link from "next/link";
 import { useAppContext } from "../context/appContext";
-import Image from "next/image";
-import menuData from "../../public/data/menuData.json"; // Import file JSON
 import HeroSection from "@/components/HeroSection";
 import PopupMessage from "@/components/PopupMessage";
 
@@ -12,6 +10,7 @@ interface MenuItem {
   name: string;
   price: number;
   image: string;
+  category: string;
 }
 
 const Home: React.FC = () => {
@@ -46,30 +45,46 @@ const Home: React.FC = () => {
     console.log(`Item '${name}' successfully added to the cart.`);
   };
 
+  const renderMenuItemsByCategory = (category: string) => {
+    const filteredItems = menuItems.filter(
+      (item) => item.category === category
+    );
+
+    return (
+      <div key={category}>
+        <h2 className="text-2xl md:text-3xl font-semibold my-4 mx-4 md:mx-8 ">
+          {category}
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 bg-[#DFD7BF] py-4 px-4 md:px-8">
+          {filteredItems.map((item) => (
+            <MenuItem
+              key={item.id}
+              id={item.id}
+              name={item.name}
+              price={item.price}
+              image={item.image}
+              onAddToCart={() =>
+                handleAddToCart(item.id, item.name, item.price, item.image)
+              }
+            />
+          ))}
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="bg-[#F2EAD3]">
       <HeroSection
-        title="Selamat Datang Di Kala Kopi"
+        title="Selamat Datang Di Kala Kopi Menggoda"
         description="Selamat menikmati aroma dan cita rasa penuh karakter hanya di Kalakopi!"
         imageUrl="/coffeeH.jpg"
       />
       <h1 className="text-2xl md:text-4xl font-semibold my-20 px-4 md:my-32 text-center">
         Bagaimana Harimu? Yuk Pesan Kopi Sekarang!
       </h1>
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-[#DFD7BF] py-20 px-4 md:px-8">
-        {menuItems.map((item) => (
-          <MenuItem
-            key={item.id}
-            id={item.id}
-            name={item.name}
-            price={item.price}
-            image={item.image}
-            onAddToCart={() =>
-              handleAddToCart(item.id, item.name, item.price, item.image)
-            }
-          />
-        ))}
-      </div>
+      {renderMenuItemsByCategory("Minuman")}
+      {renderMenuItemsByCategory("Makanan")}
       {showSuccessMessage && (
         <PopupMessage
           message="Added to cart!"

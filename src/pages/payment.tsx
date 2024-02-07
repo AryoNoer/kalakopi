@@ -25,7 +25,7 @@ Email: ${formData.email}
 No.Meja: ${formData.tableNumber}
 Items: ${cart.map((item) => `${item.name} (${item.quantity})`).join(", ")}`;
 
-    const whatsappLink = `https://wa.me/6285156031908?text=${encodeURIComponent(
+    const whatsappLink = `https://wa.me/6281388365407?text=${encodeURIComponent(
       message
     )}`;
 

@@ -11,12 +11,12 @@ const Navbar: React.FC = () => {
         </Link>
         <div className="flex space-x-4 md:gap-10">
           <Link href="/">
-            <p className="text-[#3F2305] font-semibold md:text-base text-base">
+            <p className="text-[#3F2305] font-semibold md:text-base text-base hover:opacity-70 hover:scale-105 ease-in-out duration-150">
               Beranda
             </p>
           </Link>
           <Link href="/about">
-            <p className="text-[#3F2305] font-semibold md:text-base text-base">
+            <p className="text-[#3F2305] font-semibold md:text-base text-base hover:opacity-70 hover:scale-105 ease-in-out duration-150">
               Tentang
             </p>
           </Link>
@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
               stroke-width="1.5"
               stroke="#3F2305"
               aria-label="Cart Icon"
-              className="w-6 h-6"
+              className="w-6 h-6 hover:stroke-black hover:scale-105 ease-in-out duration-300"
             >
               <path
                 stroke-linecap="round"
