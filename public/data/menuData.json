@@ -16,14 +16,14 @@
       "id": 3, 
       "name": "Kopi Susu Tergoda", 
       "price": 30, 
-      "image": "/Tergoda.jpeg",
+      "image": "/Kopi Susu Tergoda.jpeg",
       "category": "Minuman"
     },
   { 
     "id": 4, 
-    "name": "Kopi Susu  MengGoda", 
+    "name": "Kopi Susu MengGoda", 
     "price": 30,
-    "image": "/MengGoda.jpeg",
+    "image": "/Kopi Susu MengGoda.jpeg",
     "category": "Minuman" 
     },
     { 
