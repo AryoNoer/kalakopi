@@ -11,6 +11,7 @@ interface MenuItem {
   price: number;
   image: string;
   category: string;
+  description: string;
 }
 
 const Home: React.FC = () => {
@@ -61,6 +62,7 @@ const Home: React.FC = () => {
               key={item.id}
               id={item.id}
               name={item.name}
+              description={item.description}
               price={item.price}
               image={item.image}
               onAddToCart={() =>

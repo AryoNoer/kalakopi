@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-[#DFD7BF] p-4 md:px-8 top-0 sticky">
+    <nav className="bg-[#DFD7BF] p-4 md:px-8 top-0 sticky z-50">
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/">
           <p className="text-[#3F2305] font-bold text-lg md:text-xl">

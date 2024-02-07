@@ -4,12 +4,14 @@
       "name": "Pisang Goreng (Isi 5)",
       "price": 25,
       "image": "/Pisang Goreng (Isi 5).jpeg",
+      "description": "Garing, manis, lezat, renyah, menggoda.",
       "category": "Makanan"
     },
   { "id": 2,
       "name": "Caramel Machiato", 
       "price": 36, 
       "image": "/Caramel Machiato.jpeg",
+      "description": "Machiato ditambah dengan caramel sauce",
       "category": "Minuman" 
     },
   { 
@@ -17,6 +19,7 @@
       "name": "Kopi Susu Tergoda", 
       "price": 30, 
       "image": "/Kopi Susu Tergoda.jpeg",
+      "description": "Kopi susu dengan flavour butterscoth",
       "category": "Minuman"
     },
   { 
@@ -24,6 +27,7 @@
     "name": "Kopi Susu MengGoda", 
     "price": 30,
     "image": "/Kopi Susu MengGoda.jpeg",
+    "description": "Kopi susu dengan flavour klepon yang nikmat",
     "category": "Minuman" 
     },
     { 
@@ -31,6 +35,7 @@
     "name": "Kopi Susu Gula Aren", 
     "price": 25, 
     "image": "/Kopi Susu Gula Aren.jpeg",
+    "description": "Kopi susu aren yang khas dan lembut",
     "category": "Minuman" 
   },
     
@@ -39,6 +44,7 @@
     "name": "Red Velvet", 
     "price": 30, 
     "image": "/Red Velvet.jpeg",
+    "description": "Menggoda, lembut, berwarna merah anggun, manis sekaligus berkelas.",
     "category": "Minuman" 
   },
     { 
@@ -46,6 +52,7 @@
     "name": "Coklat", 
     "price": 30, 
     "image": "/Coklat.jpeg",
+    "description": "Minuman coklat memberikan kelezatan yang menyenangkan dan menghibur setiap tegukan.",
     "category": "Minuman" 
   },
     { 
@@ -53,6 +60,7 @@
     "name": "Matcha", 
     "price": 30, 
     "image": "/Matcha.jpeg",
+    "description": "Memikat, berenergi, hijau segar, cita rasa yang unik, dan menenangkan.",
     "category": "Minuman" 
   },
     { 
@@ -60,6 +68,7 @@
     "name": "Risoles (Isi 3) ala KKM", 
     "price": 25, 
     "image": "/Risoles (Isi 3).jpeg",
+    "description": "Irisan daging ayamn cincang dan sayur yang dibalut dengan bread crumbs",
     "category": "Makanan" 
   },
     { 
@@ -67,6 +76,7 @@
     "name": "Klepon", 
     "price": 30, 
     "image": "/Klepon.jpeg",
+    "description": "Klepon non coffee yang rasanya persis dengan jajanan klepon tradisional",
     "category": "Minuman" 
   },
     { 
@@ -74,6 +84,7 @@
     "name": "Bitterballen (Isi 4)", 
     "price": 30, 
     "image": "/Bitterballen (Isi 4).jpeg",
+    "description": "Cincangan daging dan jamur yang dicampur dengan krim serta keju",
     "category": "Makanan" 
   },
     { 
@@ -81,6 +92,7 @@
     "name": "French Fries ala KKM", 
     "price": 25, 
     "image": "/French Fries.jpeg",
+    "description": "Kentang goreng ala KKM",
     "category": "Makanan" 
   },
     { 
@@ -88,6 +100,7 @@
     "name": "Lumpia (Isi 3)", 
     "price": 25, 
     "image": "/Lumpia (Isi 3).jpeg",
+    "description": "Isi sayur-sayuran dan udang",
     "category": "Makanan" 
   },
     { 
@@ -95,6 +108,7 @@
     "name": "DiGodain", 
     "price": 30, 
     "image": "/DiGodain.jpeg",
+    "description": "Kopi susu cheescake",
     "category": "Minuman"
   }
 

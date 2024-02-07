@@ -19,13 +19,13 @@ const Payment: React.FC = () => {
 
   const handleConfirmOrder = () => {
     const message = `New order:
-Nama: ${formData.fullName}
-No.Telp: ${formData.phone}
-Email: ${formData.email}
-No.Meja: ${formData.tableNumber}
-Items: ${cart.map((item) => `${item.name} (${item.quantity})`).join(", ")}`;
+    Nama: ${formData.fullName}
+    No.Telp: ${formData.phone}
+    Email: ${formData.email}
+    No.Meja: ${formData.tableNumber}
+    Items: ${cart.map((item) => `${item.name} (${item.quantity})`).join(", ")}`;
 
-    const whatsappLink = `https://wa.me/6281388365407?text=${encodeURIComponent(
+    const whatsappLink = `https://wa.me/81388365407?text=${encodeURIComponent(
       message
     )}`;
 
@@ -125,7 +125,7 @@ Items: ${cart.map((item) => `${item.name} (${item.quantity})`).join(", ")}`;
                 <button
                   type="button"
                   onClick={handleConfirmOrder}
-                  className="text-black bg-[#25D366] ring-2 ring-[#fff] px-4 py-2 rounded-md hover:bg-[#22c55e] duration-300"
+                  className="text-black bg-[#25D366] ring-2 ring-[#fff] px-4 py-2 rounded-md hover:bg-[#22c55e] duration-300 disabled:bg-slate-600 disabled:cursor-not-allowed"
                 >
                   Konfirmasi Pesanan (via WhatsApp)
                 </button>
