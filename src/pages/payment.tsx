@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useAppContext } from "../context/appContext";
 import Image from "next/image";
+import cart from "./cart";
 
 const Payment: React.FC = () => {
   const { cart } = useAppContext();
@@ -11,21 +12,46 @@ const Payment: React.FC = () => {
     email: "",
     tableNumber: "",
   });
-
+  const [showPopup, setShowPopup] = useState(false);
+  const [formError, setFormError] = useState({
+    fullName: false,
+    phone: false,
+    email: false,
+    tableNumber: false,
+  });
   const handleFormChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
+    setFormError((prevError) => ({ ...prevError, [name]: false }));
   };
 
   const handleConfirmOrder = () => {
-    const message = `New order:
-    Nama: ${formData.fullName}
-    No.Telp: ${formData.phone}
-    Email: ${formData.email}
-    No.Meja: ${formData.tableNumber}
-    Items: ${cart.map((item) => `${item.name} (${item.quantity})`).join(", ")}`;
+    const isFormValid =
+      formData.fullName.trim() !== "" &&
+      formData.phone.trim() !== "" &&
+      formData.email.trim() !== "" &&
+      formData.tableNumber.trim() !== "";
 
-    const whatsappLink = `https://wa.me/81388365407?text=${encodeURIComponent(
+    if (!isFormValid) {
+      setFormError({
+        fullName: formData.fullName.trim() === "",
+        phone: formData.phone.trim() === "",
+        email: formData.email.trim() === "",
+        tableNumber: formData.tableNumber.trim() === "",
+      });
+      return;
+    }
+    setShowPopup(true);
+    const message = `New order:
+      Nama: ${formData.fullName}
+      No.Telp: ${formData.phone}
+      Email: ${formData.email}
+      No.Meja: ${formData.tableNumber}
+      Items: ${cart
+        .map((item) => `${item.name} (${item.quantity})`)
+        .join(", ")}`;
+
+    const whatsappLink = `https://wa.me/6281388365407?text=${encodeURIComponent(
       message
     )}`;
 
@@ -76,6 +102,11 @@ const Payment: React.FC = () => {
                     onChange={handleFormChange}
                     className="mt-1 p-2 w-full border border-gray-300 rounded-md"
                   />
+                  {formError.fullName && (
+                    <p className="text-red-500 text-sm mt-1">
+                      Nama Lengkap wajib diisi
+                    </p>
+                  )}
                 </div>
                 <div className="mb-4">
                   <label
@@ -91,6 +122,11 @@ const Payment: React.FC = () => {
                     onChange={handleFormChange}
                     className="mt-1 p-2 w-full border border-gray-300 rounded-md"
                   />
+                  {formError.phone && (
+                    <p className="text-red-500 text-sm mt-1">
+                      No. Telepon wajib diisi
+                    </p>
+                  )}
                 </div>
                 <div className="mb-4">
                   <label
@@ -106,6 +142,11 @@ const Payment: React.FC = () => {
                     onChange={handleFormChange}
                     className="mt-1 p-2 w-full border border-gray-300 rounded-md"
                   />
+                  {formError.email && (
+                    <p className="text-red-500 text-sm mt-1">
+                      Email wajib diisi
+                    </p>
+                  )}
                 </div>
                 <div className="mb-4">
                   <label
@@ -121,6 +162,11 @@ const Payment: React.FC = () => {
                     onChange={handleFormChange}
                     className="mt-1 p-2 w-full border border-gray-300 rounded-md"
                   />
+                  {formError.tableNumber && (
+                    <p className="text-red-500 text-sm mt-1">
+                      Nomor Meja wajib diisi
+                    </p>
+                  )}
                 </div>
                 <button
                   type="button"
@@ -141,6 +187,54 @@ const Payment: React.FC = () => {
           </p>
         </Link>
       </div>
+
+      {showPopup && (
+        <div className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center">
+          <div className="bg-white p-8 rounded-md shadow-md w-[720px]">
+            <h2 className="text-2xl font-semibold mb-4">Informasi Pesanan</h2>
+            <div className="flex flex-col ">
+              <div className="flex flex-col gap-1 ">
+                <p>Nama:</p>
+                <p className="mb-2 border-2 border-gray-400 rounded-md py-1 px-1">
+                  {formData.fullName}
+                </p>
+              </div>
+              <div className="flex flex-col gap-1">
+                <p>No. Telepon:</p>
+                <p className="mb-2 border-2 border-gray-400 rounded-md py-1 px-1">
+                  {" "}
+                  {formData.phone}
+                </p>
+              </div>
+              <div className="flex flex-col gap-1">
+                <p>Email:</p>
+                <p className="mb-2 border-2 border-gray-400 rounded-md py-1 px-1">
+                  {" "}
+                  {formData.email}
+                </p>
+              </div>
+              <div className="flex flex-col gap-1">
+                <p>No. Meja: </p>
+                <p className="mb-2 border-2 border-gray-400 rounded-md py-1 px-1">
+                  {formData.tableNumber}
+                </p>
+              </div>
+            </div>
+            <h3 className="text-xl font-semibold mt-4">Items Pesanan</h3>
+            {cart.map((item) => (
+              <p key={item.id} className="mb-1">
+                {item.name} ({item.quantity})
+              </p>
+            ))}
+            <button
+              onClick={handleConfirmOrder}
+              className="mt-4 px-4 py-2 bg-[#25D366] text-white rounded-md hover:bg-[#22c55e] duration-300"
+            >
+              Konfirmasi Pesanan
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

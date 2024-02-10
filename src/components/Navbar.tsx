@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/">
           <p className="text-[#3F2305] font-bold text-lg md:text-xl">
-            KALA KOPI
+            KalaKopiMenggoda
           </p>
         </Link>
         <div className="flex space-x-4 md:gap-10">
