@@ -168,6 +168,11 @@ const Payment: React.FC = () => {
                     </p>
                   )}
                 </div>
+                <div className="flex">
+                  <h1 className="border-2 border-[#F2EAD3] px-4 py-2 mb-8 rounded-md">
+                    Rekening Pembayaran: <b>5540661971</b>
+                  </h1>
+                </div>
                 <button
                   type="button"
                   onClick={handleConfirmOrder}
@@ -226,6 +231,7 @@ const Payment: React.FC = () => {
                 {item.name} ({item.quantity})
               </p>
             ))}
+
             <button
               onClick={handleConfirmOrder}
               className="mt-4 px-4 py-2 bg-[#25D366] text-white rounded-md hover:bg-[#22c55e] duration-300"

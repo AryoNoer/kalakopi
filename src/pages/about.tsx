@@ -18,17 +18,18 @@ const About: React.FC = () => {
         </div>
         <div className="md:w-1/2 md:ml-8 mt-8 md:mt-0">
           <h1 className="text-3xl font-semibold mb-4">
-            Tentang Kala Kopi Menggoda
+            Tentang KalaKopiMenggoda
           </h1>
           <p className="text-gray-600 font-medium">
-            Selamat datang di Kala Kopi, destinasi istimewa bagi para pencinta
-            kopi yang mencari pengalaman minum kopi tak terlupakan. Kami dengan
-            antusias menyajikan racikan kopi terbaik dari Indonesia, menciptakan
-            suasana nyaman untuk Anda bersantai dan menikmati setiap tegukan.
-            Suasana hangat dan keramahan staf kami membuat Kala Kopi menjadi
-            tempat ideal untuk melupakan sejenak hiruk-pikuk kehidupan dan
-            menikmati setiap momen bersama kami. Segera nikmati perjalanan rasa
-            kopi yang menakjubkan di tengah atmosfer yang menginspirasi.
+            Selamat datang di KalaKopiMenggoda, destinasi istimewa bagi para
+            pencinta kopi yang mencari pengalaman minum kopi tak terlupakan.
+            Kami dengan antusias menyajikan racikan kopi terbaik dari Indonesia,
+            menciptakan suasana nyaman untuk Anda bersantai dan menikmati setiap
+            tegukan. Suasana hangat dan keramahan staf kami membuat
+            KalaKopiMenggoda menjadi tempat ideal untuk melupakan sejenak
+            hiruk-pikuk kehidupan dan menikmati setiap momen bersama kami.
+            Segera nikmati perjalanan rasa kopi yang menakjubkan di tengah
+            atmosfer yang menginspirasi.
           </p>
           <div className=" font-semibold text-base my-6">
             <h1 className="">Alamat :</h1>
@@ -51,7 +52,7 @@ const About: React.FC = () => {
                 <div className="flex gap-2">
                   <p>1.</p>
                   <p>
-                    Kala Kopi Menggoda Pasar Minggu, Apple 1 Condovilla, Jati
+                    KalaKopiMenggoda Pasar Minggu, Apple 1 Condovilla, Jati
                     Padang, Jakarta Selatan.
                   </p>
                 </div>
@@ -59,7 +60,7 @@ const About: React.FC = () => {
                 <div className="flex gap-2">
                   <p>2.</p>
                   <p>
-                    Kala Kopi Menggoda Tanjung Barat, Jl. Nangka No.38,
+                    KalaKopiMenggoda Tanjung Barat, Jl. Nangka No.38,
                     Jagarkarsa.
                   </p>
                 </div>

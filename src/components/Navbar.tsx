@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
           </Link>
           <Link href="/about">
             <p className="text-[#3F2305] font-semibold md:text-base text-base hover:opacity-70 hover:scale-105 ease-in-out duration-150">
-              Tentang
+              Tentang Kami
             </p>
           </Link>
           <Link href="/cart">

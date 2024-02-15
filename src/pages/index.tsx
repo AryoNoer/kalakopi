@@ -43,7 +43,7 @@ const Home: React.FC = () => {
     setShowSuccessMessage(true);
 
     setTimeout(() => setShowSuccessMessage(false), 3000);
-    console.log(`Item '${name}' successfully added to the cart.`);
+    console.log(`Item '${name}' Berhasil ditambahkan ke keranjang`);
   };
 
   const renderMenuItemsByCategory = (category: string) => {
@@ -78,8 +78,8 @@ const Home: React.FC = () => {
   return (
     <div className="bg-[#F2EAD3]">
       <HeroSection
-        title="Selamat Datang Di Kala Kopi Menggoda"
-        description="Selamat menikmati aroma dan cita rasa penuh karakter hanya di Kalakopi!"
+        title="Selamat Datang Di KalaKopiMenggoda!"
+        description="Selamat menikmati aroma dan cita rasa penuh karakter hanya di KalaKopiMenggoda!"
         imageUrl="/coffeeH.jpg"
       />
       <h1 className="text-2xl md:text-4xl font-semibold my-20 px-4 md:my-32 text-center">
@@ -89,7 +89,7 @@ const Home: React.FC = () => {
       {renderMenuItemsByCategory("Makanan")}
       {showSuccessMessage && (
         <PopupMessage
-          message="Added to cart!"
+          message="Berhasil ditambahkan ke keranjang!"
           onClose={() => setShowSuccessMessage(false)}
         />
       )}
