@@ -4,8 +4,10 @@ import Link from "next/link";
 import { useAppContext } from "../context/appContext";
 import Image from "next/image";
 import axios from "axios"; // Install axios jika belum: npm install axios
+import Router from "next/router";
 
 const Payment: React.FC = () => {
+  const router = Router;
   const { cart } = useAppContext();
   const [formData, setFormData] = useState({
     fullName: "",
@@ -59,9 +61,9 @@ const Payment: React.FC = () => {
       });
 
       console.log(response.data);
-
+      alert("Pesanan Berhasil Dibuat");
+      router.push("/");
       // Set state atau tampilkan informasi pesanan di sini
-      setShowPopup(true);
     } catch (error) {
       console.error("Error saving order:", error);
       // Tampilkan pesan kesalahan jika diperlukan
