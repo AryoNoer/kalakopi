@@ -1,6 +1,46 @@
+"use client";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const Navbar: React.FC = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const router = useRouter();
+
+  // Fungsi untuk menangani logout
+  const handleLogout = async () => {
+    try {
+      // Cek apakah kode dijalankan di sisi klien
+      if (typeof window !== "undefined") {
+        // Kirim request ke API logout
+        const response = await fetch("/api/logout");
+
+        if (response.ok) {
+          // Hapus token JWT dari penyimpanan lokal
+          localStorage.removeItem("jwtToken");
+
+          // Setel status login kembali ke false
+          setIsLoggedIn(false);
+
+          // Redirect ke halaman utama setelah logout
+          router.push("/");
+        } else {
+          console.error("Logout failed");
+        }
+      }
+    } catch (error) {
+      console.error("Error during logout:", error);
+    }
+  };
+
+  useEffect(() => {
+    // Cek apakah kode dijalankan di sisi klien
+    if (typeof window !== "undefined") {
+      const token = localStorage.getItem("jwtToken");
+      setIsLoggedIn(!!token);
+    }
+  }, []);
+
   return (
     <nav className="bg-[#DFD7BF] p-4 md:px-8 top-0 sticky z-50">
       <div className="container mx-auto flex items-center justify-between">
@@ -37,6 +77,21 @@ const Navbar: React.FC = () => {
               />
             </svg>
           </Link>
+          {isLoggedIn ? ( // Tampilkan Logout jika sudah login
+            <button
+              onClick={handleLogout}
+              className="text-[#3F2305] font-semibold md:text-base text-base hover:opacity-70 hover:scale-105 ease-in-out duration-150"
+            >
+              Logout
+            </button>
+          ) : (
+            <Link
+              href="/login"
+              className="text-[#3F2305] font-semibold md:text-base text-base hover:opacity-70 hover:scale-105 ease-in-out duration-150"
+            >
+              Login
+            </Link>
+          )}
         </div>
       </div>
     </nav>

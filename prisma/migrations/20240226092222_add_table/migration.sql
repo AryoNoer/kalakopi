@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Order" ADD COLUMN     "totalHarga" DOUBLE PRECISION NOT NULL DEFAULT 0.0;
