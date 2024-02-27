@@ -1,4 +1,3 @@
-// pages/about.tsx
 import React from "react";
 
 import Image from "next/image";
@@ -9,7 +8,7 @@ const About: React.FC = () => {
       <div className="flex flex-col md:flex-row items-start">
         <div className="md:w-1/2">
           <Image
-            src="/about.jpeg" // Ganti dengan path gambar yang sesuai
+            src="/about.jpeg"
             alt="Kala Kopi"
             width={600}
             height={400}

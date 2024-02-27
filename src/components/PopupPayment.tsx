@@ -1,5 +1,3 @@
-// PopupMessagePayment.tsx
-
 import React from "react";
 import { useRouter } from "next/router";
 
@@ -15,10 +13,8 @@ const PopupMessagePayment: React.FC<PopupMessagePaymentProps> = ({
   const router = useRouter();
 
   const handleClose = () => {
-    // Navigasi kembali ke halaman pembayaran
     router.push("/payment");
 
-    // Panggil fungsi onClose jika diperlukan
     onClose();
   };
 

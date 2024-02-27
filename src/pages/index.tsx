@@ -1,4 +1,3 @@
-// pages/index.tsx
 import React, { useState, useEffect } from "react";
 import MenuItem from "../components/MenuItem";
 import { useAppContext } from "../context/appContext";

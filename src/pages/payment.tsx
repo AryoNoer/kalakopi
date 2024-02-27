@@ -1,9 +1,8 @@
-// pages/payment.tsx
 import React, { useState } from "react";
 import Link from "next/link";
 import { useAppContext } from "../context/appContext";
 import Image from "next/image";
-import axios from "axios"; // Install axios jika belum: npm install axios
+import axios from "axios";
 import Router from "next/router";
 
 const Payment: React.FC = () => {
@@ -44,13 +43,11 @@ const Payment: React.FC = () => {
       });
       return;
     }
-    // Hitung total harga dari pesanan
     const totalHarga = cart.reduce(
       (total, item) => total + item.price * item.quantity,
       0
     );
     try {
-      // Kirim pesanan ke API
       const response = await axios.post("/api/saveOrder", {
         fullName: formData.fullName,
         phone: formData.phone,
@@ -63,15 +60,13 @@ const Payment: React.FC = () => {
       console.log(response.data);
       alert("Pesanan Berhasil Dibuat");
       router.push("/");
-      // Set state atau tampilkan informasi pesanan di sini
     } catch (error) {
       console.error("Error saving order:", error);
-      // Tampilkan pesan kesalahan jika diperlukan
     }
   };
 
   return (
-    <div className="mt-8 px-4">
+    <div className="mt-8 px-4 max-w-2xl mx-auto">
       <h1 className="text-2xl font-semibold mb-4">Konfirmasi Pembayaran</h1>
       <div>
         {cart.length === 0 ? (
@@ -184,10 +179,22 @@ const Payment: React.FC = () => {
                   )}
                 </div>
 
-                <div className="flex">
-                  <h1 className="border-2 border-[#F2EAD3] px-4 py-2 mb-8 rounded-md">
-                    Rekening Pembayaran: <b>5540661971</b>
-                  </h1>
+                <div className="flex justify-start items-center border-2 border-zinc-100 rounded-lg my-2">
+                  <div className="">
+                    <Image
+                      src="/bca.svg"
+                      alt="logoBCA"
+                      className="w-16 h-16 mr-2 rounded-lg "
+                      width={200}
+                      height={200}
+                    />
+                  </div>
+                  <div>
+                    <h1 className="">
+                      Rekening Pembayaran a/n Ade Satya Nugraha Permana:{" "}
+                      <b>5540661971</b>
+                    </h1>
+                  </div>
                 </div>
 
                 <button

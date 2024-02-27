@@ -1,4 +1,3 @@
-// pages/register.tsx
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 const Register = () => {
@@ -26,7 +25,6 @@ const Register = () => {
         const errorData = await response.json();
         console.error(errorData.error);
         alert(errorData.error);
-        // Tambahkan penanganan error jika diperlukan
       }
     } catch (error) {
       console.error("Error during registration:", error);
