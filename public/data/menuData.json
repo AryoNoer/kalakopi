@@ -5,13 +5,15 @@
       "image": "/Pisang Goreng (Isi 5).jpeg",
       "description": "Garing, manis, lezat, renyah, menggoda.",
       "category": "Makanan"
+      https://firebasestorage.googleapis.com/v0/b/kalakopi-a0602.appspot.com/o/menu%20(1).jpeg?alt=media&token=cbeb0f0d-026f-4799-9411-636f52181425
     },
   { "id": 2,
       "name": "Caramel Machiato", 
       "price": 36, 
       "image": "/Caramel Machiato.jpeg",
       "description": "Machiato ditambah dengan caramel sauce",
-      "category": "Minuman" 
+      "category": "Minuman"
+      https://firebasestorage.googleapis.com/v0/b/kalakopi-a0602.appspot.com/o/menu%20(2).jpeg?alt=media&token=c3cc6b39-d1fd-48e9-a7c2-ecb968a5d835 
     },
   { 
       "id": 3, 
@@ -20,6 +22,7 @@
       "image": "/Kopi Susu Tergoda.jpeg",
       "description": "Kopi susu dengan flavour butterscoth",
       "category": "Minuman"
+      https://firebasestorage.googleapis.com/v0/b/kalakopi-a0602.appspot.com/o/menu%20(3).jpeg?alt=media&token=09d33efb-9b77-4793-9088-da5401bab75e
     },
   { 
     "id": 4, 
@@ -27,7 +30,8 @@
     "price": 30,
     "image": "/Kopi Susu MengGoda.jpeg",
     "description": "Kopi susu dengan flavour klepon yang nikmat",
-    "category": "Minuman" 
+    "category": "Minuman"
+    https://firebasestorage.googleapis.com/v0/b/kalakopi-a0602.appspot.com/o/menu%20(4).jpeg?alt=media&token=192ad5b5-923b-429b-aab1-4174dfa2cf0b 
     },
     { 
     "id": 5, 
@@ -35,7 +39,8 @@
     "price": 25, 
     "image": "/Kopi Susu Gula Aren.jpeg",
     "description": "Kopi susu aren yang khas dan lembut",
-    "category": "Minuman" 
+    "category": "Minuman"
+    https://firebasestorage.googleapis.com/v0/b/kalakopi-a0602.appspot.com/o/menu%20(6).jpeg?alt=media&token=66205529-4fef-4d59-9157-9e9fc4b7f235 
   },
     
     { 
@@ -44,7 +49,8 @@
     "price": 30, 
     "image": "/Red Velvet.jpeg",
     "description": "Menggoda, lembut, berwarna merah anggun, manis sekaligus berkelas.",
-    "category": "Minuman" 
+    "category": "Minuman"
+    https://firebasestorage.googleapis.com/v0/b/kalakopi-a0602.appspot.com/o/menu%20(8).jpeg?alt=media&token=859da81d-9682-4bf1-a29e-cf27242b00db 
   },
     { 
     "id": 7, 
@@ -52,7 +58,8 @@
     "price": 30, 
     "image": "/Coklat.jpeg",
     "description": "Minuman coklat memberikan kelezatan yang menyenangkan dan menghibur setiap tegukan.",
-    "category": "Minuman" 
+    "category": "Minuman"
+    https://firebasestorage.googleapis.com/v0/b/kalakopi-a0602.appspot.com/o/menu%20(9).jpeg?alt=media&token=e0dbd54f-02af-42b8-b283-f5fa56940728 
   },
     { 
     "id": 8, 
@@ -60,7 +67,8 @@
     "price": 30, 
     "image": "/Matcha.jpeg",
     "description": "Memikat, berenergi, hijau segar, cita rasa yang unik, dan menenangkan.",
-    "category": "Minuman" 
+    "category": "Minuman"
+    https://firebasestorage.googleapis.com/v0/b/kalakopi-a0602.appspot.com/o/menu%20(10).jpeg?alt=media&token=a8e655c7-9d00-4c1c-a78c-8f61f23c460a
   },
     { 
     "id": 9, 
@@ -68,7 +76,8 @@
     "price": 25, 
     "image": "/Risoles (Isi 3).jpeg",
     "description": "Irisan daging ayamn cincang dan sayur yang dibalut dengan bread crumbs",
-    "category": "Makanan" 
+    "category": "Makanan"
+    https://firebasestorage.googleapis.com/v0/b/kalakopi-a0602.appspot.com/o/menu%20(14).jpeg?alt=media&token=de550021-6844-4554-b958-c991132c26f6
   },
     { 
     "id": 10, 
@@ -77,6 +86,7 @@
     "image": "/Klepon.jpeg",
     "description": "Klepon non coffee yang rasanya persis dengan jajanan klepon tradisional",
     "category": "Minuman" 
+    https://firebasestorage.googleapis.com/v0/b/kalakopi-a0602.appspot.com/o/menu%20(11).jpeg?alt=media&token=65595127-21b7-4659-9aab-1a2c7ac99189
   },
     { 
     "id": 11, 
@@ -84,7 +94,8 @@
     "price": 30, 
     "image": "/Bitterballen (Isi 4).jpeg",
     "description": "Cincangan daging dan jamur yang dicampur dengan krim serta keju",
-    "category": "Makanan" 
+    "category": "Makanan"
+    https://firebasestorage.googleapis.com/v0/b/kalakopi-a0602.appspot.com/o/menu%20(12).jpeg?alt=media&token=16ef2c6a-2918-4d00-bc3e-a79df2bf3080
   },
     { 
     "id": 12, 
@@ -92,7 +103,8 @@
     "price": 25, 
     "image": "/French Fries.jpeg",
     "description": "Kentang goreng ala KKM",
-    "category": "Makanan" 
+    "category": "Makanan"
+    https://firebasestorage.googleapis.com/v0/b/kalakopi-a0602.appspot.com/o/menu%20(13).jpeg?alt=media&token=50b23503-f240-4574-a85a-7a0468802a74
   },
     { 
     "id": 13, 
@@ -100,7 +112,8 @@
     "price": 25, 
     "image": "/Lumpia (Isi 3).jpeg",
     "description": "Isi sayur-sayuran dan udang",
-    "category": "Makanan" 
+    "category": "Makanan"
+    https://firebasestorage.googleapis.com/v0/b/kalakopi-a0602.appspot.com/o/menu%20(15).jpeg?alt=media&token=a4e164b7-eda6-40fe-8664-f7b04fda8e17 
   },
     { 
     "id": 14, 
@@ -109,6 +122,7 @@
     "image": "/DiGodain.jpeg",
     "description": "Kopi susu cheescake",
     "category": "Minuman"
+    https://firebasestorage.googleapis.com/v0/b/kalakopi-a0602.appspot.com/o/menu%20(3).jpeg?alt=media&token=09d33efb-9b77-4793-9088-da5401bab75e
   }
 
 ]

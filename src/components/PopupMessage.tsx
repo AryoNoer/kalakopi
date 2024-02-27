@@ -9,7 +9,7 @@ const PopupMessage: React.FC<PopupMessageProps> = ({ message, onClose }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       onClose();
-    }, 1000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, [onClose]);

@@ -41,3 +41,12 @@ model User {
   password String
   role     String @default("user")
 }
+
+model Menu {
+  id          Int    @id @default(autoincrement())
+  name        String
+  image       String // Field untuk menyimpan nama gambar
+  price       Float
+  description String
+  category    String // Field untuk menyimpan kategori
+}

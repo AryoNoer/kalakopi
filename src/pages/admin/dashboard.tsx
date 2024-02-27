@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import Link from "next/link";
 interface Item {
   id: number;
   name: string;
@@ -40,6 +40,21 @@ const Dashboard: React.FC = () => {
   return (
     <div className="container mx-auto min-h-screen p-8">
       <h1 className="text-4xl font-bold mb-8">Admin Dashboard</h1>
+      <div className="flex space-x-4 justify-end">
+        <Link
+          href="/admin/menu"
+          className="bg-zinc-800 text-white px-3 py-2 rounded-md mb-4 hover:bg-zinc-700 duration-300 ease-in-out"
+        >
+          Menu List
+        </Link>
+        <Link
+          href="/admin/addMenu"
+          className="bg-zinc-800 text-white px-3 py-2 rounded-md mb-4 hover:bg-zinc-700 duration-300 ease-in-out"
+        >
+          Tambah Menu
+        </Link>
+      </div>
+
       <div className="overflow-x-auto">
         <table className="min-w-full bg-gray-300 border-2 rounded-lg shadow-lg overflow-hidden">
           <thead className="bg-gray-100">
@@ -61,7 +76,6 @@ const Dashboard: React.FC = () => {
                 <td className="p-2 border text-center">{order.customer}</td>
                 <td className="p-2 border text-center">{order.phone}</td>
                 <td className="p-2 border text-center">{order.tableNumber}</td>
-
                 <td className="p-2 border text-center">{order.createdAt}</td>
                 <td className="p-2 border text-center">
                   Rp.{order.totalHarga}k

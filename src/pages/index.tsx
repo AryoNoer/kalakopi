@@ -21,7 +21,7 @@ const Home: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/data/menuData.json");
+        const response = await fetch("/api/getMenu");
         const data = await response.json();
         setMenuItems(data);
       } catch (error) {
