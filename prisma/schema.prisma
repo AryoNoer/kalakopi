@@ -45,8 +45,8 @@ model User {
 model Menu {
   id          Int    @id @default(autoincrement())
   name        String
-  image       String // Field untuk menyimpan nama gambar
+  image       String
   price       Float
   description String
-  category    String // Field untuk menyimpan kategori
+  category    String
 }
